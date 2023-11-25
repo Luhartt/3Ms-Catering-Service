@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
 body {
 
         margin: 0;
@@ -26,7 +28,7 @@ body {
     align-items: center;
     gap: 40%;
     z-index: 1;
-
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -38,7 +40,8 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    border-bottom: 5px solid transparent
+    border-bottom: 5px solid transparent;
+    padding: auto;
 }
 
 .nav a:hover {
@@ -52,10 +55,14 @@ body {
 .logo {
     margin-top: 10%;
     padding-left: 5%;
+    padding-right: 20%;
     max-height: 180px;
     z-index: 1;
 }
 
+/*1-55 for header*/
+
+/* right side logo */
 .logo2{
 
     position: relative;
@@ -68,12 +75,7 @@ body {
 
 }
 
-.featured {
-    width: 100%;
-    height: auto;
-    z-index: 3;
-}
-
+/*content sa gitna*/
 .featcon {
 
     width: 100%;
@@ -90,6 +92,7 @@ body {
     
 }
 
+/* text sa left */
 .feattext {
     height: auto;
     width: auto;
@@ -106,6 +109,7 @@ body {
 
 }
 
+/* bringing excellence eme */
 .featcon p{
 
     display: flex;
@@ -118,6 +122,7 @@ body {
 
 }
 
+/* links */
 .featcon a{
 
   display: inline-flex;
@@ -146,10 +151,11 @@ body {
     
 }
 
+/* carousel and about */
 .midcontent{
 
     display: flex;
-    margin: 70px 30px;
+    margin: 80px 30px;
     justify-content: space-around;
     align-content: center;
     
@@ -176,8 +182,193 @@ body {
     text-align: center;
 }
 
-.highlight{
+/*di ko masyado gamay ung sa slider*/
+.carousel{
+    padding: 2px;
 
-    width: 800px;
+
+}
+
+.slider{
+
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 20px;
     
 }
+
+.highlights{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider img{
+
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+
+.bottom_content{
+
+    width: 100%;
+    margin: 90px auto;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottom_content h1{
+
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+}
+.calltoactions{
+
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: 440px;
+    width: 400px;
+    background-color: #077E82;
+    border-radius: 5px;
+}
+
+
+
+.cta a, .cta p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color:#077E82;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.cta p{
+    display: flex;
+    align-items: center;
+    background-color: #FFB1B1;
+    width: 220px;
+    text-align: center;
+    text-wrap: wrap;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 8px;
+}
+
+
+/* footer na to */
+
+
+.top{
+
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    height: 310px;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.Quicklinks a, .Help a, .location p, .Contacts a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.Quicklinks h1, .Help h1{
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.Contacts{
+
+    margin-top: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+.line{
+
+    width: 200px;
+    background-color: white;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.Contacts h1{
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.fb{
+    margin-right: 18px;
+}
+
+.line2{
+
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+.bottom{
+    background-color:black;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    
+}
+
+
+.bottom p{
+
+    font-weight: 100;
+}
+.ARS{
+
+    margin-left: 950px;
+}
+
+
