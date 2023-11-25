@@ -32,7 +32,7 @@ body {
 
 }
 
-.nav a {
+.navi {
     text-wrap: nowrap;
     color: white;
     text-decoration: none;
@@ -45,7 +45,7 @@ body {
     padding: auto;
 }
 
-.nav a:hover {
+.navi:hover {
 
     border-bottom: 5px solid #FFB1B1;
 
@@ -72,6 +72,7 @@ body {
     height: auto;
     bottom:  100px;
     width: 599px;
+   
 
 }
 
@@ -335,6 +336,7 @@ body {
 }
 
 .Contacts h1{
+    
     color: white;
     line-height: 150%;
     font-family: 'Inter', sans-serif;
@@ -352,6 +354,7 @@ body {
     background-color: white;
 }
 .bottom{
+
     background-color:black;
     display: flex;
     color: white;
@@ -360,8 +363,6 @@ body {
     font-weight: lighter;
     
 }
-
-
 .bottom p{
 
     font-weight: 100;
