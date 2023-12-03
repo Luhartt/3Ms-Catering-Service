@@ -290,10 +290,13 @@ body {
 
 @keyframes slider-animation{
 
-    0%{transform: translateX(0%);}
-    25%, 35%{transform: translateX(-100%);}
-    50%, 75% {transform: translateX(-200%);}
-    90%, 100%{transform: translateX(-300%);}
+    0%, 5%{transform: translateX(0%);}
+    15%, 25%{transform: translateX(-100%);}
+    45%, 60% {transform: translateX(-200%);}
+    75%, 90% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+    
+}
     
 }
 
