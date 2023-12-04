@@ -1,0 +1,289 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    
+  
+}
+
+
+
+/* header */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+.header {
+
+    position : fixed ;
+    background-color: #1A1A1A;
+    height: 100%;
+    max-height: 80px;
+    width: 100%;
+    display: flex;
+    border-bottom: 5px solid transparent;
+    z-index: 1;
+    float : left;
+
+}
+
+.nav {
+
+    display: flex;
+    align-items: center;
+    gap: 35%;
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.navi {
+
+    text-wrap: nowrap;
+    color: white;
+    text-decoration: none;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin : 3.8% 2% 0 5%;
+    border-bottom: 20px solid transparent;
+    transition : 0.2s;
+
+}
+
+.navi:hover {
+ 
+    border-bottom: 5px solid #FFB1B1;
+    transition : 0.5s ;
+
+}
+
+.logo {
+
+    margin-top: 9%;
+    padding-left: 10%;
+    max-height: 180px;
+    z-index: 1;
+    transform : translate( 0 , 0 ) ;
+    transition : transform 250ms;
+
+}
+
+.logo:hover {
+
+    max-height: 180px;
+    z-index: 1;
+    transform : translate( 0 , 3.5% ) ;
+
+}
+
+/* carousel */
+.carousel{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    margin-bottom: 3vh;
+}
+
+.slider-wrapper{
+
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 25px;;
+
+
+}
+
+.slider img{
+
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+.slider{
+
+    display: flex;
+    height: auto;
+    animation-name: slider-animation;
+    animation:
+    slider-animation 15s ease-in-out 1s infinite;
+   
+}
+
+@keyframes slider-animation{
+
+    0%, 5%{transform: translateX(0%);}
+    15%, 25%{transform: translateX(-100%);}
+    45%, 60% {transform: translateX(-200%);}
+    75%, 90% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+    
+}
+
+/* Catered events text */
+
+.catered-events-content{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 7rem;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    justify-content: center;
+    margin-block: 5vh;
+    margin-bottom: 200px;
+    
+}
+
+.catered-events-heading-text{
+
+    text-align: center;
+    padding: 5vh 7vh;
+}
+
+.celebrations, .exquisite-themes{
+
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 10%;
+    
+
+}
+
+.celebrations-text, .exquisite-themes-text{
+
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* footer */
+
+.top {
+
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    height: 310px;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+.Quicklinks a, .Help a, .location p, .Contacts a {
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.location p:hover, .top a:hover {
+
+    text-decoration: underline;
+
+}
+
+.Quicklinks h1, .Help h1 {
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.Contacts {
+
+    margin-top: 120px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.line {
+
+    width: 200px;
+    background-color: white;
+    height: 1px;
+ 
+    margin-bottom: 30px;
+}
+
+.Contacts h1 {
+    
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.fb {
+
+    margin-right: 18px;
+
+}
+
+.line2 {
+
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.bottom {
+
+    background-color:black;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    text-wrap: nowrap;
+    
+}
+
+.bottom p {
+
+    font-weight: 100;
+
+}
+
+.ARS {
+
+    margin-left: 950px;
+}
