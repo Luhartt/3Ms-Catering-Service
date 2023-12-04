@@ -97,7 +97,7 @@ body {
 .slider-wrapper{
 
     position: relative;
-    max-width: 80rem;
+    max-width: calc(100vh + 20rem);
     margin: 0 auto;
     overflow: hidden;
     border-radius: 25px;;
