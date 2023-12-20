@@ -226,7 +226,7 @@ input[type=button]{
 }
 
 
-.contact1 {
+.contact1, .contact1 a {
 
     width: 80%;
     gap: 5%;
