@@ -5,7 +5,7 @@
 a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
-  
+   
 }
 
 body {
@@ -59,8 +59,6 @@ body {
     text-decoration: none;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-tracks: center;
     border-bottom: 5px solid transparent;
     padding-bottom: 1.5%;
     padding-top: 2%;
@@ -207,6 +205,17 @@ input[type=button]{
     font-family: 'Montserrat';
     font-size: 20px;
     border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer
+
+}
+
+input[type=button]:hover{
+
+
+    background-color: white;
+    color: #A50000;
+    border: 2px solid #A50000;
 
 }
 
@@ -233,6 +242,7 @@ input[type=button]{
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
+    color: black;
 
 }
 

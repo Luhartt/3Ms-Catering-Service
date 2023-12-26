@@ -239,7 +239,10 @@ body {
     flex-direction: row;
    
 
+
 }
+
+
 
 .about {
 
@@ -291,6 +294,9 @@ body {
 
     position: absolute;
     z-index: -1;
+    height: auto;
+    max-width:  50vw;
+    
 }
 
 .carousel p {
