@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* buong header container */
+.header{
+
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+    
+   
+}
+
+/* buong div para sa navigations excluding img */
+.nav-main{
+
+    
+    display: flex;
+    align-self: center;
+    
+    
+}
+
+/* img logo  */
+.header>img{
+
+    margin-inline: 6vw;
+    
+}
+
+/* ito ung main container 
+para sa buong navigation buttons */
+.header ul{
+    list-style: none;
+}
+
+
+
+/* ito ung list containing the anchor links */
+.header li{
+
+    display: inline-block;
+    position: relative;
+    
+}
+
+
+/* ito ung mismong anchor links <a href>
+yung home, about us, contact, etc */
+.header li>a{
+
+        margin-inline: 2vw;
+        display: block;
+        padding: 3.5vh 2vw;
+        font-size: 1vw;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        
+}
+
+/* dropdown content ito (beef pork vegetables etc.*/
+.header ul li ul.dropdown>li{
+    display: block;
+    border-radius: 10px;
+    font-size: 1vw;
+
+}
+
+/* para sa mga hrefs under the dropdown */
+ul.dropdown li a{
+
+    margin: 0;
+    color: black;
+    padding: 0.6rem 2rem;
+    border: 2px solid #380000;
+    border-radius: 5px;
+}
+
+/* buong dropdown to */
+.header ul li ul.dropdown{
+
+    width: fit-content;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+}
+
+.header ul li>a:hover{
+
+    /* dito mo lagay lahat ng 
+    animations for the navigation links
+    border ganon ganon 
+    wag na translate plss, gagalaw kasi lahat (ata, pero why not try)*/
+}
+
+/* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+.header ul li:hover ul.dropdown{
+
+    display: block;
+}
+
+/* animation para sa hrefs under the dropdown */
+.header ul li ul.dropdown li a:hover{
+
+   background-color: #FFB1B1;
+   
+    
+}
