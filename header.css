@@ -7,6 +7,8 @@
 }
 
 
+/*              HEADER START              */
+
 /* buong header container */
 .header{
 
@@ -33,7 +35,7 @@
 /* img logo  */
 .header>img{
 
-    margin-inline: 6vw;
+    margin-inline: 3vw;
     
 }
 
@@ -66,6 +68,8 @@ yung home, about us, contact, etc */
         text-decoration: none;
         text-align: center;
         font-family: 'Inter', sans-serif;
+        border-bottom: 3px solid #1A1A1A;
+        transition : 0.5s ;
         
 }
 
@@ -83,7 +87,7 @@ ul.dropdown li a{
     margin: 0;
     color: black;
     padding: 0.6rem 2rem;
-    border: 2px solid #380000;
+    border: 2px solid #1A1A1A;
     border-radius: 5px;
 }
 
@@ -100,10 +104,14 @@ ul.dropdown li a{
 
 .header ul li>a:hover{
 
-    /* dito mo lagay lahat ng 
-    animations for the navigation links
-    border ganon ganon 
-    wag na translate plss, gagalaw kasi lahat (ata, pero why not try)*/
+    border-bottom: 3px solid #FFB1B1;
+    transition : 0.3s ;
+}
+
+.header ul li>a:active {
+
+    color: lightblue;
+    transition: 0s;
 }
 
 /* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
@@ -115,7 +123,9 @@ ul.dropdown li a{
 /* animation para sa hrefs under the dropdown */
 .header ul li ul.dropdown li a:hover{
 
-   background-color: #FFB1B1;
-   
-    
+    color: white;
+    background-color: #FFB1B1;
+    border: 2px solid #1A1A1A;  
 }
+
+/*              HEADER STOP              */
