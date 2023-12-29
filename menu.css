@@ -1,135 +1,660 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+
+* {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
+
 
 
 body {
 
-    margin: 0;
+    margin-top: 10%;
     padding: 0;
     box-sizing: border-box;
     background-color: #FFF1E6;
 
 }
 
-/* header */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
-    position: fixed;
+
     background-color: #1A1A1A;
-    height: 100%;
-    max-height: 8%;
     width: 100%;
+    height: 10vh;
     display: flex;
-    border-bottom: 5px solid transparent;
-    z-index: 1;
-    float: left;
-
-}
-
-.nav {
-
-    margin-inline: 2%;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: -1%;
+    z-index: 9999;
+  }
+  
+  /* buong div para sa navigations excluding img */
+  .nav-main {
+  
+  
     display: flex;
-    align-items: center;
-    z-index: 1;
-    font-family: 'Inter', sans-serif;
-
-}
-
-.navigations {
-
-    
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.nav_link {
-
-
-    text-wrap: nowrap;
+    align-self: center;
+  
+  
+  }
+  
+  /* img logo  */
+  .header>img {
+  
+    margin-inline: 3vw;
+    display: block;
+    position: relative;
+    top: -2vh
+  }
+  
+  /* ito ung main container 
+  para sa buong navigation buttons */
+  .header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  
+  /* ito ung list containing the anchor links */
+  .header li {
+  
+    display: inline-block;
+    position: relative;
+  
+  }
+  
+  
+  /* ito ung mismong anchor links <a href>
+  yung home, about us, contact, etc */
+  .header li>a {
+  
+    margin-inline: 2vw;
+    display: block;
+    padding: 3.5vh 2vw;
+    font-size: 1vw;
     color: white;
     text-decoration: none;
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+  
+  }
+  
+  /* dropdown content ito (beef menu vegetables etc.*/
+  .header ul li ul.dropdown>li {
+    display: block;
+    border-radius: 10px;
+    font-size: 1vw;
+  
+  }
+  
+  /* para sa mga hrefs under the dropdown */
+  ul.dropdown li a {
+  
+    margin: 0;
+    color: black;
+    padding: 0.6rem 2rem;
+    border: 2px solid #1A1A1A;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+  }
+  
+  /* buong dropdown to */
+  .header ul li ul.dropdown {
+  
+    width: fit-content;
+  
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .header ul li>a:hover {
+  
+    border-bottom: 3px solid #FFB1B1;
+    transition: 0.3s;
+  }
+  
+  .header ul li>a:active {
+  
+    color: lightblue;
+    transition: 0s;
+  }
+  
+  /* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+  .header ul li:hover ul.dropdown {
+  
+    display: block;
+    z-index: 999;
+  }
+  
+  /* animation para sa hrefs under the dropdown */
+  .header ul li ul.dropdown li a:hover {
+  
+    color: white;
+    background-color: #FFB1B1;
+    border: 2px solid #1A1A1A;
+  }
+  
+  /*              HEADER STOP              */
+
+
+
+.heading {
+
+    margin-block: 6vh;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-tracks: center;
-    border-bottom: 5px solid transparent;
-    padding-bottom: 1.5%;
-    padding-top: 2%;
-    transition: 0.2s;
+    align-items: center;
+}
+
+.title>h1 {
+    height: 5vh;
+    width: 25vw;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    border-block: 2px solid black;
+    margin-bottom: .5rem;
+}
+
+.heading>h1 {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+
+.first-part-menu {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.navigations ul {
+.part1 {
 
-    margin-top: 1rem;
-    position: absolute;
-    list-style: none;
-    background-color: #1A1A1A;
+    margin-bottom: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #FFCECE;
+    border-radius: 40px 40px 0 0;
+}
+
+.packages {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+    padding: 3rem;
+    line-height: 1.5rem;
+    border-radius: 0 0 40px 40px;
+}
+
+.packages ul {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 50px;
+
+}
+
+.part2 {
+
+    margin-bottom: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wedding-debut-content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding: 5vh;
+    height: auto;
+    width: 100%;
+
+
+}
+
+.wed-packages {
+
+    height: 100%;
+    justify-content: flex-start;
+    display: flex;
+    width: 50%;
+    margin-inline: 5%;
+    flex-direction: column;
+    border-right: 2px solid black;
+}
+
+.wed-packages>div.packageA,
+.wed-packages>div.packageB {
+
+    padding-bottom: 2vw;
+
+}
+
+.menu-heading-img>img{
+
+    width: 40vw;
+    margin-bottom: 15%;
+}
+
+.part2 ul {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 50px;
+    margin-bottom: 1vh;
+}
+
+.packages h1,
+.wedding-debut-content h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 1.5vh;
+}
+
+
+
+.menu-heading>img {
+
+    margin-block: 1.5rem;
+}
+
+
+
+
+
+.main-menu-heading{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 3%;
+    
+}
+
+.main-menu-heading h1{
+
+    padding: 2vw 15vh;
+    background-color: white;
+    border-radius: 10px;
+    border-block: 5px solid #FFB1B1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    box-shadow: -2px 0px 15px -3px rgba(0,0,0,0.75);
+}
+
+.menu{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.menu-content {
+
+    height: fit-content;
+    width: 35%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 0px 15px -3px rgba(0,0,0,0.75);
+
+}
+
+.menu-heading {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.menu-heading>h1 {
+
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Monsterrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 4vh 0 3vh 0;
+    border-bottom: 2px solid black;
+
+}
+
+
+.best-sellers {
+
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10svh;
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+   
     
 
 }
 
-.dropdown-menu li{
+.best-sellers img {
 
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: none;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
 }
 
-.dropdown-menu a{
-
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown-menu li .navigations>li:hover{
-
-    display: block;
-}
-
-
-
-.nav_link:hover {
-
-    transform: translateY(7%);
-    border-bottom: 5px solid #FFB1B1;
-    transition: 0.5s;
-
-}
-
-.navi:active {
-    border-bottom: 5px solid lightcyan;
-    transition: 0s;
-}
-
-.logo {
-
-    margin-left: 20%;
-    max-height: 180px;
-    z-index: 1;
-    transition: transform 250ms;
-
-}
-
-.logo_main {
+.best-sellers>div {
+    height: 13rem;
+    width: fit-content;
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding-bottom: 10%;
 }
 
-.logo:hover {
+.best-sellers p {
 
-    max-height: 180px;
-    z-index: 1;
-    transform: translate(0, 2.5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #FFE2E2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
 
+
+.dishes-menu{
+
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10vh
+}
+
+.dishes-menu ul{
+
+    margin-top: 2vh;
+    padding-left: 5vw;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-sectionv1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("images/menu/Menu-Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 0 10% 0;
+    margin-top: -5%;
+    zoom: 85%;
+    
+}
+
+.menu-sectionv2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("images/menu/Menu-Background 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 0 10% 0;
+    margin-top: -5%;
+    zoom: 85%;
+}
+
+.menu-sectionv3{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("images/menu/Menu-Background 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 0 4% 0;
+    margin-top: -5%;
+    zoom: 85%
+}
+
+
+
+
+.menu-content-2{
+
+    
+
+    height: fit-content;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 0px 15px -3px rgba(0,0,0,0.75);
+
+
+}
+
+.drinks{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.drinks-content {
+
+    height: fit-content;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 0px 15px -3px rgba(0,0,0,0.75);
+
+}
+
+.best-sellers-2{
+
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem;
+
+}
+
+.best-sellers-2 img {
+
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.best-sellers-2>div {
+    height: 13rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding-bottom: 10%;
+}
+
+.best-sellers-2 p {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #FFE2E2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+}
+
+/* footer  */
+
+.top {
+
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    height: 310px;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+.Quicklinks a, .Help a, .location p, .Contacts a {
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.location p:hover, .top a:hover {
+
+    text-decoration: underline;
+
+}
+
+.Quicklinks h1, .Help h1 {
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.Contacts {
+
+    margin-top: 120px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.line {
+
+    width: 200px;
+    background-color: white;
+    height: 1px;
+ 
+    margin-bottom: 30px;
+}
+
+.Contacts h1 {
+    
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.fb {
+
+    margin-right: 18px;
+
+}
+
+.line2 {
+
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.bottom {
+
+    background-color:black;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    text-wrap: nowrap;
+    
+}
+
+.bottom p {
+
+    font-weight: 100;
+
+}
+
+.ARS {
+
+    margin-left: 950px;
 }

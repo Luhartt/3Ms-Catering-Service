@@ -10,97 +10,142 @@ a:-webkit-any-link {
 
 body {
 
+    margin-top: 10%;
     margin: 0;
     padding: 0;
     background-color: #FFF1E6;
 
 }
 
-/* header */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
-    position: fixed;
+
     background-color: #1A1A1A;
-    height: 100%;
-    max-height: 8%;
     width: 100%;
+    height: 10vh;
     display: flex;
-    border-bottom: 5px solid transparent;
-    z-index: 1;
-    float: left;
-
-}
-
-.nav {
-
-    margin-inline: 2%;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: -1%;
+    z-index: 9999;
+  }
+  
+  /* buong div para sa navigations excluding img */
+  .nav-main {
+  
+  
     display: flex;
-    align-items: center;
-    z-index: 1;
-    font-family: 'Inter', sans-serif;
-
-}
-
-.navigations {
-
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.nav_link {
-
-
-    text-wrap: nowrap;
+    align-self: center;
+  
+  
+  }
+  
+  /* img logo  */
+  .header>img {
+  
+    margin-inline: 3vw;
+    display: block;
+    position: relative;
+    top: -2vh
+  }
+  
+  /* ito ung main container 
+  para sa buong navigation buttons */
+  .header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  
+  /* ito ung list containing the anchor links */
+  .header li {
+  
+    display: inline-block;
+    position: relative;
+  
+  }
+  
+  
+  /* ito ung mismong anchor links <a href>
+  yung home, about us, contact, etc */
+  .header li>a {
+  
+    margin-inline: 2vw;
+    display: block;
+    padding: 3.5vh 2vw;
+    font-size: 1vw;
     color: white;
     text-decoration: none;
     text-align: center;
-    display: flex;
-    border-bottom: 5px solid transparent;
-    padding-bottom: 1.5%;
-    padding-top: 2%;
-    transition: 0.2s;
-
-}
-
-.nav_link:hover {
-
-    transform: translateY(7%);
-    border-bottom: 5px solid #FFB1B1;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 3px solid transparent;
     transition: 0.5s;
-
-}
-
-.navi:active {
-    border-bottom: 5px solid lightcyan;
+  
+  }
+  
+  /* dropdown content ito (beef menu vegetables etc.*/
+  .header ul li ul.dropdown>li {
+    display: block;
+    border-radius: 10px;
+    font-size: 1vw;
+  
+  }
+  
+  /* para sa mga hrefs under the dropdown */
+  ul.dropdown li a {
+  
+    margin: 0;
+    color: black;
+    padding: 0.6rem 2rem;
+    border: 2px solid #1A1A1A;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+  }
+  
+  /* buong dropdown to */
+  .header ul li ul.dropdown {
+  
+    width: fit-content;
+  
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .header ul li>a:hover {
+  
+    border-bottom: 3px solid #FFB1B1;
+    transition: 0.3s;
+  }
+  
+  .header ul li>a:active {
+  
+    color: lightblue;
     transition: 0s;
-}
-
-.logo {
-
-    margin-left: 20%;
-    max-height: 180px;
-    z-index: 1;
-    transition: transform 250ms;
-
-}
-
-.logo_main {
-    display: flex;
-    height: 100%;
-}
-
-.logo:hover {
-
-    max-height: 180px;
-    z-index: 1;
-    transform: translate(0, 2.5%);
-
-}
-
+  }
+  
+  /* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+  .header ul li:hover ul.dropdown {
+  
+    display: block;
+    z-index: 999;
+  }
+  
+  /* animation para sa hrefs under the dropdown */
+  .header ul li ul.dropdown li a:hover {
+  
+    color: white;
+    background-color: #FFB1B1;
+    border: 2px solid #1A1A1A;
+  }
+  
+  /*              HEADER STOP              */
 
 .contact-us-heading {
 

@@ -1,99 +1,146 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
 body {
 
-        margin: 0;
-        padding: 0;
-      
+    margin-top: 10%;
+    margin: 0;
+    padding: 0;
+
 }
 
+/*              HEADER START              */
+
+/* buong header container */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
-    position : fixed ;
+
     background-color: #1A1A1A;
-    height: 100%;
-    max-height: 8%;
     width: 100%;
+    height: 10vh;
     display: flex;
-    border-bottom: 5px solid transparent;
-    z-index: 1;
-    float : left;
-
-}
-
-.nav {
-
-    margin-inline: 2%;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: -1%;
+    z-index: 9999;
+  }
+  
+  /* buong div para sa navigations excluding img */
+  .nav-main {
+  
+  
     display: flex;
-    align-items: center;
-    z-index: 1;
-    font-family: 'Inter', sans-serif;
-
-}
-
-.navigations{
-
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    
-}
-.nav_link {
-
-    
-    text-wrap: nowrap;
+    align-self: center;
+  
+  
+  }
+  
+  /* img logo  */
+  .header>img {
+  
+    margin-inline: 3vw;
+    display: block;
+    position: relative;
+    top: -2vh
+  }
+  
+  /* ito ung main container 
+  para sa buong navigation buttons */
+  .header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  
+  /* ito ung list containing the anchor links */
+  .header li {
+  
+    display: inline-block;
+    position: relative;
+  
+  }
+  
+  
+  /* ito ung mismong anchor links <a href>
+  yung home, about us, contact, etc */
+  .header li>a {
+  
+    margin-inline: 2vw;
+    display: block;
+    padding: 3.5vh 2vw;
+    font-size: 1vw;
     color: white;
     text-decoration: none;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-tracks: center;
-    border-bottom: 5px solid transparent;
-    padding-bottom: 1.5%;
-    padding-top: 2%;
-    transition : 0.2s;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+  
+  }
+  
+  /* dropdown content ito (beef menu vegetables etc.*/
+  .header ul li ul.dropdown>li {
+    display: block;
+    border-radius: 10px;
+    font-size: 1vw;
+  
+  }
+  
+  /* para sa mga hrefs under the dropdown */
+  ul.dropdown li a {
+  
+    margin: 0;
+    color: black;
+    padding: 0.6rem 2rem;
+    border: 2px solid #1A1A1A;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+  }
+  
+  /* buong dropdown to */
+  .header ul li ul.dropdown {
+  
+    width: fit-content;
+  
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .header ul li>a:hover {
+  
+    border-bottom: 3px solid #FFB1B1;
+    transition: 0.3s;
+  }
+  
+  .header ul li>a:active {
+  
+    color: lightblue;
+    transition: 0s;
+  }
+  
+  /* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+  .header ul li:hover ul.dropdown {
+  
+    display: block;
+    z-index: 999;
+  }
+  
+  /* animation para sa hrefs under the dropdown */
+  .header ul li ul.dropdown li a:hover {
+  
+    color: white;
+    background-color: #FFB1B1;
+    border: 2px solid #1A1A1A;
+  }
+  
+  /*              HEADER STOP              */
 
-}
-
-.nav_link:hover {
- 
-    transform: translateY(7%);
-    border-bottom: 5px solid #FFB1B1;
-    transition : 0.5s ;
-
-}
-
-.navi:active {
-    border-bottom: 5px solid lightcyan;
-    transition : 0s ;
-}
-
-.logo {
-
-    margin-left: 20%;
-    max-height: 180px;
-    z-index: 1;
-    transition : transform 250ms;
-
-}
-
-.logo_main{
-    display: flex;
-    height: 100%;
-}
-
-.logo:hover {
-
-    max-height: 180px;
-    z-index: 1;
-    transform : translate( 0 , 2.5% ) ;
-
-}
-
-/*header*/
 
 /* right side logo */
 .logo_planevent {
@@ -111,7 +158,7 @@ body {
     justify-content: center;
     align-content: center;
     height: auto;
-    bottom:  100px;
+    bottom: 100px;
     width: 650px;
     z-index: 0;
 
@@ -127,16 +174,16 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding : 5% 0 0 0 ;
+    padding: 5% 0 0 0;
     background: url("images/home/FEATURED\ IMAGE.png") no-repeat center;
     background-size: cover;
-    
+
 }
 
 /* text sa left */
 .feattext {
-    
-    padding : 1% 7% 0 0;
+
+    padding: 1% 7% 0 0;
     margin-left: 10%;
     text-wrap: nowrap;
 
@@ -160,36 +207,36 @@ body {
     font-size: 24px;
     margin: 25px;
     font-family: 'Montserrat';
-    
+
 }
 
 /* links */
 .featcon a {
 
-  display: inline-flex;
-  padding: 10px 50px;
-  margin: 5px;
-  font-size: 20px;
-  font-family: 'Montserrat'
+    display: inline-flex;
+    padding: 10px 50px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat'
 
 }
 
 .ViewOffers {
-    
+
     background-color: #FFB1B1;
     border: 1px #FFB1B1;
     border-radius: 20px;
     text-decoration: none;
     color: black;
-    transition : 0.3s ;
+    transition: 0.3s;
 
 }
 
 .ViewOffers:hover {
     background-color: #ffffff;
-    border-color: #fff; 
+    border-color: #fff;
     color: black;
-    transition : 0.3s ;
+    transition: 0.3s;
 }
 
 .LearnMore {
@@ -199,18 +246,18 @@ body {
     border-radius: 20px;
     text-decoration: none;
     color: white;
-    transition : 0.3s;
-    
+    transition: 0.3s;
+
 }
 
 .LearnMore:hover {
 
-    background-color: white ;
+    background-color: white;
     border: 2px solid #FFB1B1;
-    border-radius:20px;
+    border-radius: 20px;
     text-decoration: none;
     color: black;
-    transition : 0.3s;
+    transition: 0.3s;
 
 }
 
@@ -228,7 +275,7 @@ body {
     position: relative
 }
 
-.highlights{
+.highlights {
 
     width: 100%;
     height: 120vh;
@@ -237,7 +284,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-   
+
 
 
 }
@@ -259,8 +306,8 @@ body {
 
     font-size: 25px;
     font-family: 'Montserrat';
-    text-align: justify ;
-   
+    text-align: justify;
+
 }
 
 
@@ -273,30 +320,30 @@ body {
 }
 
 /*di ko masyado gamay ung sa slider*/
-.carousel{
+.carousel {
 
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.highlights-title{
+.highlights-title {
 
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: -1;
-    
+
 }
 
-.highlights-title>img{
+.highlights-title>img {
 
     position: absolute;
     z-index: -1;
     height: auto;
-    max-width:  50vw;
-    
+    max-width: 50vw;
+
 }
 
 .carousel p {
@@ -309,7 +356,7 @@ body {
     font-weight: bold;
 }
 
-.slider-wrapper{
+.slider-wrapper {
 
     position: relative;
     max-width: 43rem;
@@ -320,7 +367,7 @@ body {
 
 }
 
-.slider img{
+.slider img {
 
     object-fit: cover;
     flex: 1 0 100%;
@@ -330,24 +377,42 @@ body {
 }
 
 
-.slider{
+.slider {
 
     display: flex;
     aspect-ratio: 16/9;
     animation-name: slider-animation;
     animation:
-     slider-animation 13s ease-in-out 1s infinite alternate;
-   
+        slider-animation 13s ease-in-out 1s infinite alternate;
+
 }
 
-@keyframes slider-animation{
+@keyframes slider-animation {
 
-    0%, 5%{transform: translateX(0%);}
-    15%, 25%{transform: translateX(-100%);}
-    45%, 60% {transform: translateX(-200%);}
-    75%, 90% {transform: translateX(-300%);}
-    100% {transform: translateX(0%);}
-    
+    0%,
+    5% {
+        transform: translateX(0%);
+    }
+
+    15%,
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45%,
+    60% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    90% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
 }
 
 /* end carousel */
@@ -357,7 +422,7 @@ body {
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .bottom_content h1 {
@@ -376,7 +441,7 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 4%;
-    
+
 }
 
 .cta {
@@ -384,26 +449,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding : 1% 1% 0 1%;
+    padding: 1% 1% 0 1%;
     height: 20%;
     width: 23%;
     background-color: #BFFFC6;
-    border : 4px solid #BFFFC6;
+    border: 4px solid #BFFFC6;
     border-radius: 10px;
-    transition : 0.3s;
-    margin : 1% 0 0 0 ;
+    transition: 0.3s;
+    margin: 1% 0 0 0;
 
 }
 
-.cta a, .cta p {
-    
+.cta a,
+.cta p {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-decoration: none;
-    transition : 0.3s;
-    
+    transition: 0.3s;
+
 }
 
 .cta p {
@@ -421,10 +487,10 @@ body {
     line-height: 25px;
     transform: translateY(-50%);
     box-shadow: 2px 2px 10px black;
-    border : 4px solid #FFB1B1;
+    border: 4px solid #FFB1B1;
     border-radius: 8px;
-    padding : 2% 5% ;
-    transition : 0.3s;
+    padding: 2% 5%;
+    transition: 0.3s;
 
 }
 
@@ -432,9 +498,9 @@ body {
     background-color: #ffffff;
     font-family: 'Montserrat';
     box-shadow: 2px 2px 10px black;
-    border : 4px solid transparent;
+    border: 4px solid transparent;
     border-radius: 8px;
-    transition : 0.3s;
+    transition: 0.3s;
 }
 
 .cta:hover {
@@ -442,10 +508,10 @@ body {
     background-color: #dcffe1;
     font-family: 'Montserrat';
     box-shadow: 2px 2px 10px black;
-    border : 4px solid #dcffe1;
+    border: 4px solid #dcffe1;
     border-radius: 8px;
-    transform: translate( 0, -1.5% );
-    transition : 0.3s;
+    transform: translate(0, -1.5%);
+    transition: 0.3s;
 
 }
 
@@ -465,7 +531,10 @@ body {
 
 }
 
-.Quicklinks a, .Help a, .location p, .Contacts a {
+.Quicklinks a,
+.Help a,
+.location p,
+.Contacts a {
 
     display: flex;
     flex-direction: row;
@@ -478,14 +547,16 @@ body {
 
 }
 
-.location p:hover, .top a:hover {
+.location p:hover,
+.top a:hover {
 
     text-decoration: underline;
 
 }
 
-.Quicklinks h1, .Help h1 {
-    
+.Quicklinks h1,
+.Help h1 {
+
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
     margin-bottom: 10px;
@@ -506,12 +577,12 @@ body {
     width: 200px;
     background-color: white;
     height: 1px;
- 
+
     margin-bottom: 30px;
 }
 
 .Contacts h1 {
-    
+
     color: white;
     line-height: 150%;
     font-family: 'Inter', sans-serif;
@@ -536,14 +607,14 @@ body {
 
 .bottom {
 
-    background-color:black;
+    background-color: black;
     display: flex;
     color: white;
     justify-content: space-evenly;
     font-family: 'Inter', sans-serif;
     font-weight: lighter;
     text-wrap: nowrap;
-    
+
 }
 
 .bottom p {
@@ -556,5 +627,3 @@ body {
 
     margin-left: 950px;
 }
-
-

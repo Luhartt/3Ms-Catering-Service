@@ -36,13 +36,16 @@
 .header>img{
 
     margin-inline: 3vw;
-    
+    display: block;
+    position: relative;
+    top: -2vh
 }
 
 /* ito ung main container 
 para sa buong navigation buttons */
 .header ul{
     list-style: none;
+    padding: 0;
 }
 
 
@@ -68,7 +71,7 @@ yung home, about us, contact, etc */
         text-decoration: none;
         text-align: center;
         font-family: 'Inter', sans-serif;
-        border-bottom: 3px solid #1A1A1A;
+        border-bottom: 3px solid transparent;
         transition : 0.5s ;
         
 }
@@ -88,6 +91,7 @@ ul.dropdown li a{
     color: black;
     padding: 0.6rem 2rem;
     border: 2px solid #1A1A1A;
+    background-color: rgba (255,255,255, 0.7);
     border-radius: 5px;
 }
 
@@ -95,7 +99,7 @@ ul.dropdown li a{
 .header ul li ul.dropdown{
 
     width: fit-content;
-    background-color: white;
+    
     position: absolute;
     border-radius: 10px;
     z-index: 9999;
