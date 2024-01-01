@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-} */
-
 
 body {
     margin-top: 10%;
@@ -57,7 +49,6 @@ body {
     list-style: none;
     padding: 0;
   }
-  
   
   
   /* ito ung list containing the anchor links */
@@ -146,6 +137,9 @@ body {
   
   /*              HEADER STOP              */
 
+
+
+
 .homepage_green {
 
     width: 100%;
@@ -154,38 +148,48 @@ body {
     justify-content: center;
     text-align: center;
     padding: 1% 0 1% 0;
-    background: url("images/home/HOMEPAGE_BG.png") no-repeat center;
+    background: url("images/catered-events/CATERED_EVENTS_BG.png") no-repeat center;
     background-size: cover;
 
 }
 
 
-/* carousel */
-.carousel {
+
+
+/*                  LEADING CAROUSEL START                      */
+.leading_carousel {
 
     display: flex;
     flex-direction: column;
-    padding-top: 15vh;
-    margin-bottom: 3vh;
-}
-
-.carousel p {
-    font-size: 46px;
+    margin-top: 8vh;
+    margin-bottom: 1vh;
+    font-weight: bolder;
     text-align: center;
     font-family: 'Montserrat';
-    font-weight: bolder;
 }
 
-.slider-wrapper {
+.leading_carousel h2 {
+    font-size: 3em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1vh;
+}
+
+.leading_carousel p {
+    font-size: 1.5em;
+    padding-bottom: 5vh;
+}
+
+.lc-slider-wrapper {
 
     position: relative;
-    max-width: 65vw;
+    max-width: 55vw;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 25px;
 }
 
-.slider img {
+.lc-slider img {
 
     object-fit: cover;
     flex: 1 0 100%;
@@ -194,8 +198,7 @@ body {
 
 }
 
-
-.slider {
+.lc-slider {
 
     display: flex;
     aspect-ratio: 16/9;
@@ -234,63 +237,533 @@ body {
 
 }
 
-/* Catered events text */
+/*                  LEADING CAROUSEL STOP                        */
 
+
+
+/*                  EVENT LIST                     */
+/* Catered events text */
 .catered-events-content {
 
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    gap: 7rem;
-    font-size: 30px;
+    font-size: 1.3em;
     font-family: 'Montserrat';
+    text-align: center;
     justify-content: center;
     margin-block: 5vh;
-    margin-bottom: 200px;
 
 }
 
-.catered-events-heading-text {
-
-    text-align: center;
-    padding: 1vh 7vh;
-}
-
-.celebrations,
-.exquisite-themes {
-
-    display: flex;
+.event-category-text {
     width: 100%;
-    height: auto;
-    justify-content: center;
-    gap: 4%;
+    height: 18vh;
+    
+    font-weight: bold;
+    font-size: 2em;
 
+    margin: 5vh 0 5vh 0;
+    background-color: #FFB1B1;
 }
 
-.celebrations-text,
-.exquisite-themes-text {
+/*                  BIRTHDAYS                        */
 
-    flex-direction: column;
-    text-wrap: wrap;
-    text-align: left;
-    justify-content: center;
-    width: 25%;
+/*                  CHEN 18                        */
+.chen-18-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
 }
 
-.celebrations-text p {
-    /* padding: ; */
-    font-size: 24px;
-    text-align: justify;
+.chen-18-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
 }
 
-.title-ribbon-half {
-    position: absolute;
-    z-index: -1;
-    transform: translate(12vw, 0);
+.chen-18-text{
+    position: relative;
+
+    width: 45vw;
+    height : 28vh;
+
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 14vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
 }
 
-/* footer */
+
+/*                  SAM 18                        */
+.sam-18-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.sam-18-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.sam-18-text{
+    position: relative;
+
+    width: 45vw;
+    height : 28vh;
+
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 14vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+/*                  MARCY 65                        */
+.marcy-65-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.marcy-65-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.marcy-65-text{
+    position: relative;
+
+    width: 45vw;
+    height : 30vh;
+
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 12vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+
+
+/*                  KIDS EVENTS                        */
+
+/*                  MOIVIC CHRISTENING                        */
+.moivic-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.moivic-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.moivic-text{
+    position: relative;
+
+    width: 45vw;
+    height : 34vh;
+
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 8vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*                  NIKKI TURNS 1                        */
+.nikki-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.nikki-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.nikki-text{
+    position: relative;
+
+    width: 45vw;
+    height : 32vh;
+
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 10vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*                  DENISE MARGARETTE TURNS 1                        */
+.margaux-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 105vh;
+
+    margin: 2.2vw;
+    gap: 0vh 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.dm1-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.dm1-text{
+    position: relative;
+
+    width: 45vw;
+    height : 34vh;
+
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 8vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+.dmc-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.dmc-text{
+    position: relative;
+
+    width: 45vw;
+    height : 34vh;
+
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 8vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+
+
+/*                  WEDDINGS AND GATHERINGS                        */
+
+/*                  SILICON TECHNOLOGY                        */
+.silicon-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.silicon-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.silicon-text{
+    position: relative;
+
+    width: 45vw;
+    height : 28vh;
+
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 14vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*                  JASON AND KAYE WEDDING                        */
+.jkwedding-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.jkwedding-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.jkwedding-text{
+    position: relative;
+
+    width: 45vw;
+    height : 28vh;
+
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 14vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*                  SEMINAR                        */
+.seminar-wrapper{
+    display: flex;
+    width: 95vw;
+    height: 52vh;
+
+    margin: 2.2vw;
+    gap: 4.2vw;
+
+    border-radius: 15px;
+    background-color: #dcffe1;
+    
+}
+
+.seminar-gallery {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 40vw;
+    width: 40vw;
+    height : 42vh;
+    
+    font-size: 3em;
+    
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+
+    border-radius: 20px;
+    border: 5px solid #FFB1B1;
+}
+
+.seminar-text{
+    position: relative;
+
+    width: 45vw;
+    height : 27vh;
+
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    padding-top: 15vh;
+    margin-top: 5vh;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+/*                  FOOTER START                        */
 
 .top {
 
