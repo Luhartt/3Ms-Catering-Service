@@ -165,6 +165,96 @@ body {
     background-color: black;
 }
 
+.content{
+
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  
+}
+
+.checklist-log{
+display: flex;
+flex-direction: column;
+align-items: center;
+position: fixed;
+right: 0;
+margin-right: 5%;
+padding-top: 5%;
+background-color: #FFEDED;
+height: 75vh;
+width: 31vw;
+bottom: 10%;
+
+}
+
+.checklist-log a{
+
+text-decoration: none;
+color: black;
+position: absolute;
+bottom: 8%;
+padding-blocK: 1rem;
+padding-inline: 2rem;
+border-radius: 10px;
+background-color: #FFB1B1;
+font-size: 18px;
+font-family: 'Montserrat';
+font-weight: bold;
+
+}
+
+.checklist-log a:hover{
+
+  
+  color: black;
+  position: absolute;
+  bottom: 8%;
+  padding-blocK: 1rem;
+  padding-inline: 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border-color: #fff;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+ 
+}
+
+.heading-checklist{
+  
+padding-top: 7%;
+display: flex;
+justify-content: center;
+position: absolute;
+top: 0;
+z-index: -1;
+border-radius: 20px;
+
+}
+
+
+.heading-checklist > p{
+
+  font-size: 20px;
+  position: absolute;
+  font-family: 'Montserrat';
+  text-wrap: nowrap;
+  font-weight: bold;
+  
+
+
+}
+.selected-content{
+
+  border-radius: 15px;
+  height: 30rem;
+  padding: 3rem;
+  background-color: #FFF;
+}
+
+
+
 .services {
 
     width: 70vw;
@@ -176,7 +266,7 @@ body {
 
 .services>div {
 
-    width: 80%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -241,7 +331,7 @@ body {
 form,
 .price p {
 
-    font-size: 2.3vh;
+    font-size: 20px;
     font-family: 'Montserrat';
     text-wrap: nowrap;
 
@@ -255,4 +345,118 @@ form,
 
 
 
+}
+
+.footer{
+    
+  position: relative;
+  z-index: 999;
+}
+.top {
+
+  display: flex;
+  background-color: #0D0D0D;
+  color: white;
+  width: 100%;
+  height: 310px;
+  justify-content: space-around;
+  padding-top: 30px;
+
+}
+
+.Quicklinks a,
+.Help a,
+.location p,
+.Contacts a {
+
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  line-height: 150%;
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+
+}
+
+.location p:hover,
+.top a:hover {
+
+  text-decoration: underline;
+
+}
+
+.Quicklinks h1,
+.Help h1 {
+
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: 18px;
+
+}
+
+.Contacts {
+
+  margin-top: 120px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.line {
+
+  width: 200px;
+  background-color: white;
+  height: 1px;
+
+  margin-bottom: 30px;
+}
+
+.Contacts h1 {
+
+  color: white;
+  line-height: 150%;
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+
+}
+
+.fb {
+
+  margin-right: 18px;
+
+}
+
+.line2 {
+
+  height: 1px;
+  width: 100%;
+  background-color: white;
+
+}
+
+.bottom {
+
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+  text-wrap: nowrap;
+
+}
+
+.bottom p {
+
+  font-weight: 100;
+
+}
+
+.ARS {
+
+  margin-left: 950px;
 }
