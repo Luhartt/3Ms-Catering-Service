@@ -171,87 +171,73 @@ body {
   width: 100%;
   flex-direction: row;
   
+  
 }
 
 .checklist-log{
-display: flex;
-flex-direction: column;
-align-items: center;
-position: fixed;
-right: 0;
-margin-right: 5%;
-padding-top: 5%;
-background-color: #FFEDED;
-height: 75vh;
-width: 31vw;
-bottom: 10%;
 
+  position: sticky;
+  height: fit-content;
+  right: 0;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFEDED;
+  padding: 3rem 2rem 7rem 2rem;
+  align-items: center;
+  margin-right: 3%;
+  outline: 1px solid black;
+  border-radius: 3%;
+  margin-bottom: 2rem;
 }
-
-.checklist-log a{
-
-text-decoration: none;
-color: black;
-position: absolute;
-bottom: 8%;
-padding-blocK: 1rem;
-padding-inline: 2rem;
-border-radius: 10px;
-background-color: #FFB1B1;
-font-size: 18px;
-font-family: 'Montserrat';
-font-weight: bold;
-
-}
-
-.checklist-log a:hover{
-
-  
-  color: black;
-  position: absolute;
-  bottom: 8%;
-  padding-blocK: 1rem;
-  padding-inline: 2rem;
-  border-radius: 10px;
-  background-color: #ffffff;
-  border-color: #fff;
-  font-size: 18px;
-  font-family: 'Montserrat';
-  font-weight: bold;
- 
-}
-
 .heading-checklist{
-  
-padding-top: 7%;
-display: flex;
-justify-content: center;
-position: absolute;
-top: 0;
-z-index: -1;
-border-radius: 20px;
-
-}
-
-
-.heading-checklist > p{
 
   font-size: 20px;
-  position: absolute;
   font-family: 'Montserrat';
   text-wrap: nowrap;
   font-weight: bold;
-  
-
+  margin-bottom: 2rem;
 
 }
+
 .selected-content{
 
-  border-radius: 15px;
-  height: 30rem;
-  padding: 3rem;
-  background-color: #FFF;
+  background-color: #fff;
+  padding: 3rem 2rem 3rem 2rem;
+  margin-bottom: 15%;
+  border-radius: 5%;
 }
+
+
+.checklist-log a{
+
+  text-decoration: none;
+  color: black;
+  margin-top: 10%;
+  padding-blocK: 1rem;
+  padding-inline: 2rem;
+  border-radius: 10px;
+  background-color: #FFB1B1;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  
+  }
+  
+  .checklist-log a:hover{
+  
+    
+    color: black;
+    padding-blocK: 1rem;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border-color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+   
+  }
 
 
 
