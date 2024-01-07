@@ -381,7 +381,7 @@ ul.dropdown li a {
   background-color: lightgray;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
-  cursor: pointer; /* Add a pointer cursor for interactivity */
+  cursor: pointer;
 }
 
 .white-box a{
