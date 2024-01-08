@@ -10,11 +10,14 @@ body {
 /*              HEADER START              */
 
 /* buong header container */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
 
     background-color: #1A1A1A;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -40,7 +43,7 @@ body {
     margin-inline: 3vw;
     display: block;
     position: relative;
-    top: -2vh
+
   }
   
   /* ito ung main container 
@@ -49,6 +52,7 @@ body {
     list-style: none;
     padding: 0;
   }
+  
   
   
   /* ito ung list containing the anchor links */
@@ -94,14 +98,12 @@ body {
     border: 2px solid #1A1A1A;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
-    
   }
   
   /* buong dropdown to */
   .header ul li ul.dropdown {
   
     width: fit-content;
-  
     position: absolute;
     border-radius: 10px;
     z-index: 9999;
@@ -264,7 +266,7 @@ body {
     font-size: 2em;
 
     margin: 5vh 0 5vh 0;
-    background-color: #FFB1B1;
+    background-color: #ffccea;
 }
 
 /*                  BIRTHDAYS                        */
@@ -273,9 +275,9 @@ body {
 .chen-18-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 0 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -287,9 +289,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -297,21 +299,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .chen-18-text{
     position: relative;
 
-    width: 45vw;
-    height : 28vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 3em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 14vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -323,9 +325,9 @@ body {
 .sam-18-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 4.5vh 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -337,9 +339,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -347,21 +349,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .sam-18-text{
     position: relative;
 
-    width: 45vw;
-    height : 28vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 3em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 14vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -373,9 +375,9 @@ body {
 .marcy-65-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 4.5vh 2.2vw 2vw 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -387,9 +389,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -397,21 +399,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .marcy-65-text{
     position: relative;
 
-    width: 45vw;
-    height : 30vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 3em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 12vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -428,9 +430,9 @@ body {
 .moivic-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 0 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -442,9 +444,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -452,21 +454,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .moivic-text{
     position: relative;
 
-    width: 45vw;
-    height : 34vh;
+    width: 55vw;
+    height : 28vh;
 
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 8vh;
+    padding-top: 5vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -477,9 +479,9 @@ body {
 .nikki-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 4.5vh 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -491,9 +493,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -501,21 +503,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .nikki-text{
     position: relative;
 
-    width: 45vw;
-    height : 32vh;
+    width: 55vw;
+    height : 27vh;
 
     font-size: 3em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 10vh;
+    padding-top: 6vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -527,7 +529,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
-    height: 105vh;
+    height: 90vh;
 
     margin: 2.2vw;
     gap: 0vh 4.2vw;
@@ -541,9 +543,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -551,21 +553,22 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
+
 }
 
 .dm1-text{
     position: relative;
 
-    width: 45vw;
-    height : 34vh;
+    width: 55vw;
+    height : 28vh;
 
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 8vh;
+    padding-top: 5vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -578,9 +581,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -588,21 +591,22 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
+
 }
 
 .dmc-text{
     position: relative;
 
-    width: 45vw;
-    height : 34vh;
+    width: 55vw;
+    height : 28vh;
 
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 8vh;
+    padding-top: 5vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -619,9 +623,9 @@ body {
 .silicon-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 0 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -633,9 +637,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -643,21 +647,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .silicon-text{
     position: relative;
 
-    width: 45vw;
-    height : 28vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 2.2em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 14vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -668,9 +672,9 @@ body {
 .jkwedding-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 4.5vh 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -682,9 +686,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -692,21 +696,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .jkwedding-text{
     position: relative;
 
-    width: 45vw;
-    height : 28vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 2.2em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 14vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -717,9 +721,9 @@ body {
 .seminar-wrapper{
     display: flex;
     width: 95vw;
-    height: 52vh;
+    height: 42vh;
 
-    margin: 2.2vw;
+    margin: 4.5vh 2.2vw 0 2.2vw;
     gap: 4.2vw;
 
     border-radius: 15px;
@@ -731,9 +735,9 @@ body {
     position: relative;
     overflow: hidden;
 
-    max-width: 40vw;
-    width: 40vw;
-    height : 42vh;
+    max-width: 30vw;
+    width: 30vw;
+    height : 32vh;
     
     font-size: 3em;
     
@@ -741,21 +745,21 @@ body {
     margin-left: 2.5vw;
 
     border-radius: 20px;
-    border: 5px solid #FFB1B1;
+    border: 5px solid #ffccea;
 }
 
 .seminar-text{
     position: relative;
 
-    width: 45vw;
-    height : 27vh;
+    width: 55vw;
+    height : 23vh;
 
     font-size: 3em;
     font-weight: bold;
     font-family: 'Montserrat';
     text-align: center;
 
-    padding-top: 15vh;
+    padding-top: 10vh;
     margin-top: 5vh;
 
     border-radius: 20px;
@@ -813,7 +817,7 @@ body {
 
 .Contacts {
 
-    margin-top: 120px;
+    margin-top: 200px;
     text-align: center;
     text-decoration: none;
 

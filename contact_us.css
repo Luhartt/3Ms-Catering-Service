@@ -20,11 +20,14 @@ body {
 /*              HEADER START              */
 
 /* buong header container */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
 
     background-color: #1A1A1A;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -50,7 +53,7 @@ body {
     margin-inline: 3vw;
     display: block;
     position: relative;
-    top: -2vh
+
   }
   
   /* ito ung main container 
@@ -111,7 +114,6 @@ body {
   .header ul li ul.dropdown {
   
     width: fit-content;
-  
     position: absolute;
     border-radius: 10px;
     z-index: 9999;
@@ -350,7 +352,7 @@ input[type=button]:hover{
 
 .Contacts {
 
-    margin-top: 120px;
+    margin-top: 200px;
     text-align: center;
     text-decoration: none;
 

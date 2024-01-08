@@ -24,11 +24,14 @@ body {
 /*              HEADER START              */
 
 /* buong header container */
+/*              HEADER START              */
+
+/* buong header container */
 .header {
 
 
     background-color: #1A1A1A;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -36,48 +39,49 @@ body {
     position: fixed;
     top: -1%;
     z-index: 9999;
-}
-
-/* buong div para sa navigations excluding img */
-.nav-main {
-
-
+  }
+  
+  /* buong div para sa navigations excluding img */
+  .nav-main {
+  
+  
     display: flex;
     align-self: center;
-
-
-}
-
-/* img logo  */
-.header>img {
-
+  
+  
+  }
+  
+  /* img logo  */
+  .header>img {
+  
     margin-inline: 3vw;
     display: block;
     position: relative;
-    top: -2vh
-}
 
-/* ito ung main container 
+  }
+  
+  /* ito ung main container 
   para sa buong navigation buttons */
-.header ul {
+  .header ul {
     list-style: none;
     padding: 0;
-}
-
-
-/* ito ung list containing the anchor links */
-.header li {
-
+  }
+  
+  
+  
+  /* ito ung list containing the anchor links */
+  .header li {
+  
     display: inline-block;
     position: relative;
-
-}
-
-
-/* ito ung mismong anchor links <a href>
+  
+  }
+  
+  
+  /* ito ung mismong anchor links <a href>
   yung home, about us, contact, etc */
-.header li>a {
-
+  .header li>a {
+  
     margin-inline: 2vw;
     display: block;
     padding: 3.5vh 2vw;
@@ -88,68 +92,66 @@ body {
     font-family: 'Inter', sans-serif;
     border-bottom: 3px solid transparent;
     transition: 0.5s;
-
-}
-
-/* dropdown content ito (beef menu vegetables etc.*/
-.header ul li ul.dropdown>li {
+  
+  }
+  
+  /* dropdown content ito (beef menu vegetables etc.*/
+  .header ul li ul.dropdown>li {
     display: block;
     border-radius: 10px;
     font-size: 1vw;
-
-}
-
-/* para sa mga hrefs under the dropdown */
-ul.dropdown li a {
-
+  
+  }
+  
+  /* para sa mga hrefs under the dropdown */
+  ul.dropdown li a {
+  
     margin: 0;
     color: black;
     padding: 0.6rem 2rem;
     border: 2px solid #1A1A1A;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
-
-}
-
-/* buong dropdown to */
-.header ul li ul.dropdown {
-
+  }
+  
+  /* buong dropdown to */
+  .header ul li ul.dropdown {
+  
     width: fit-content;
-
     position: absolute;
     border-radius: 10px;
     z-index: 9999;
     display: none;
-}
-
-.header ul li>a:hover {
-
+  }
+  
+  .header ul li>a:hover {
+  
     border-bottom: 3px solid #FFB1B1;
     transition: 0.3s;
-}
-
-.header ul li>a:active {
-
+  }
+  
+  .header ul li>a:active {
+  
     color: lightblue;
     transition: 0s;
-}
-
-/* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
-.header ul li:hover ul.dropdown {
-
+  }
+  
+  /* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+  .header ul li:hover ul.dropdown {
+  
     display: block;
     z-index: 999;
-}
-
-/* animation para sa hrefs under the dropdown */
-.header ul li ul.dropdown li a:hover {
-
+  }
+  
+  /* animation para sa hrefs under the dropdown */
+  .header ul li ul.dropdown li a:hover {
+  
     color: white;
     background-color: #FFB1B1;
     border: 2px solid #1A1A1A;
-}
-
-/*              HEADER STOP              */
+  }
+  
+  /*              HEADER STOP              */
 
 
 
@@ -484,7 +486,7 @@ section.about {
 
 .Contacts {
 
-    margin-top: 120px;
+    margin-top: 200px;
     text-align: center;
     text-decoration: none;
 
@@ -526,7 +528,7 @@ section.about {
 .bottom {
 
     background-color: black;
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     display: flex;
     color: white;
     justify-content: space-evenly;
