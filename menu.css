@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
    
 }
 
@@ -18,7 +19,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #FFF1E6;
-
+    overflow-x: hidden;
 }
 
 /*              HEADER START              */
@@ -553,7 +554,8 @@ body {
     text-wrap: nowrap;
 }
 
-/* footer  */
+/* footer na to */
+
 
 .top {
 
@@ -567,7 +569,10 @@ body {
 
 }
 
-.Quicklinks a, .Help a, .location p, .Contacts a {
+.Quicklinks a,
+.Help a,
+.location p,
+.Contacts a {
 
     display: flex;
     flex-direction: row;
@@ -580,14 +585,16 @@ body {
 
 }
 
-.location p:hover, .top a:hover {
+.location p:hover,
+.top a:hover {
 
     text-decoration: underline;
 
 }
 
-.Quicklinks h1, .Help h1 {
-    
+.Quicklinks h1,
+.Help h1 {
+
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
     margin-bottom: 10px;
@@ -608,12 +615,12 @@ body {
     width: 200px;
     background-color: white;
     height: 1px;
- 
+
     margin-bottom: 30px;
 }
 
 .Contacts h1 {
-    
+
     color: white;
     line-height: 150%;
     font-family: 'Inter', sans-serif;
@@ -638,14 +645,15 @@ body {
 
 .bottom {
 
-    background-color:black;
+    background-color: black;
+    padding-block: 1rem;
     display: flex;
     color: white;
     justify-content: space-evenly;
     font-family: 'Inter', sans-serif;
     font-weight: lighter;
     text-wrap: nowrap;
-    
+
 }
 
 .bottom p {

@@ -300,7 +300,9 @@ input[type=button]:hover{
 
 
 
-/* footer  */
+/* footer na to */
+
+
 .top {
 
     display: flex;
@@ -390,6 +392,7 @@ input[type=button]:hover{
 .bottom {
 
     background-color: black;
+    padding-block: 1rem;
     display: flex;
     color: white;
     justify-content: space-evenly;

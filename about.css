@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffe2cc;
+  overflow-x: hidden;
 
 }
 
@@ -21,7 +22,7 @@ body {
 
 
   background-color: #1A1A1A;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -190,7 +191,7 @@ ul.dropdown li a {
 .details {
   display: flex;
   gap: 69px;
-  margin: 27px auto;
+  margin: 25px auto;
   max-width: 1206px;
 }
 
@@ -238,7 +239,9 @@ ul.dropdown li a {
   background: url("images/about/bg4.png") no-repeat center;
   background-size: cover;
   padding: 0;
-  margin: 0;
+  margin: 25px;
+   margin-block: -7%;
+  padding-block: 2%;
 
 }
 
@@ -300,89 +303,13 @@ ul.dropdown li a {
 
 
 
-}
-
-.part4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 609px;
-  align-items: flex;
-
 
 }
 
-.p4label {
-  width: 525px;
-  height: 43px;
-  margin-bottom: 56px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
-  font-weight: 600;
-
-}
-
-.p4label hr {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: black;
-
-
-}
-
-
-.imgp4container {
-  width: 1279px;
-  height: 194px;
-  margin-bottom: 45px;
-  margin-top: 6px;
-
-  padding-top: 45px;
-}
-
-.img5 {
-  width: 100%;
-  height: 101%;
-  object-fit: cover;
-}
-
-.bottomtextcontain {
-  width: 491px;
-  height: 62px;
-  display: flex;
-  flex-direction: column;
-
-  flex-shrink: 0;
-  margin: 5px;
-  align-items: center baseline;
-
-
-}
-
-.labelbottom {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: bolder;
-  text-align: center;
-  margin-bottom: 8px;
-
-
-}
-
-.textbottom {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
 
 /*p5*/
 .part5 {
+
   width: 100%;
   height: 900px;
   display: flex;
@@ -392,6 +319,8 @@ ul.dropdown li a {
   padding: 1% 0 1% 0;
   background: url("images/about/bg3.png") no-repeat center;
   background-size: cover;
+  margin-block: -7%;
+  padding-block: 2%;
 }
 
 
@@ -402,13 +331,15 @@ ul.dropdown li a {
   flex-direction: column;
   align-items: flex-start;
   width: 919px;
-
   justify-content: center;
 }
 
 .dropdown-label {
   font-family: Montserrat;
   font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -416,8 +347,9 @@ ul.dropdown li a {
   margin-bottom: 15px;
   background-color: #313131;
   border-radius: 5px;
-  height: 47px;
+  height: 3rem;
 }
+
 
 .dropdown-p5 {
   background-color: white;

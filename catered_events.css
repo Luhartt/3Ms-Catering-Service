@@ -763,7 +763,8 @@ body {
 }
 
 
-/*                  FOOTER START                        */
+/* footer na to */
+
 
 .top {
 
@@ -854,6 +855,7 @@ body {
 .bottom {
 
     background-color: black;
+    padding-block: 1rem;
     display: flex;
     color: white;
     justify-content: space-evenly;

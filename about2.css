@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@200;400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;900&family=Playfair+Display:wght@900&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+/*              HEADER START              */
+
+/* buong header container */
+.header {
+
+
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: -1%;
+    z-index: 9999;
+}
+
+/* buong div para sa navigations excluding img */
+.nav-main {
+
+
+    display: flex;
+    align-self: center;
+
+
+}
+
+/* img logo  */
+.header>img {
+
+    margin-inline: 3vw;
+    display: block;
+    position: relative;
+    top: -2vh
+}
+
+/* ito ung main container 
+  para sa buong navigation buttons */
+.header ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* ito ung list containing the anchor links */
+.header li {
+
+    display: inline-block;
+    position: relative;
+
+}
+
+
+/* ito ung mismong anchor links <a href>
+  yung home, about us, contact, etc */
+.header li>a {
+
+    margin-inline: 2vw;
+    display: block;
+    padding: 3.5vh 2vw;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+
+}
+
+/* dropdown content ito (beef menu vegetables etc.*/
+.header ul li ul.dropdown>li {
+    display: block;
+    border-radius: 10px;
+    font-size: 1vw;
+
+}
+
+/* para sa mga hrefs under the dropdown */
+ul.dropdown li a {
+
+    margin: 0;
+    color: black;
+    padding: 0.6rem 2rem;
+    border: 2px solid #1A1A1A;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+
+}
+
+/* buong dropdown to */
+.header ul li ul.dropdown {
+
+    width: fit-content;
+
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+}
+
+.header ul li>a:hover {
+
+    border-bottom: 3px solid #FFB1B1;
+    transition: 0.3s;
+}
+
+.header ul li>a:active {
+
+    color: lightblue;
+    transition: 0s;
+}
+
+/* ito ung mag popromt na lumabas dropdown pag hinover ung MENU */
+.header ul li:hover ul.dropdown {
+
+    display: block;
+    z-index: 999;
+}
+
+/* animation para sa hrefs under the dropdown */
+.header ul li ul.dropdown li a:hover {
+
+    color: white;
+    background-color: #FFB1B1;
+    border: 2px solid #1A1A1A;
+}
+
+/*              HEADER STOP              */
+
+
+
+.hero-section {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/about/bg-16.png") no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.hero>h1 {
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.hero>p {
+
+    font-family: Playfair Display;
+    font-size: 7rem;
+}
+
+
+.hero p,
+.hero h1 {
+
+    margin-block: 10vh;
+
+}
+
+
+section.about {
+
+    background: url("images/about/bg3.png") no-repeat;
+    padding-block: 10%;
+    margin-top: -13%;
+    background-size: cover;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.part1,
+.part2 {
+
+    margin-block: 3%;
+
+}
+
+
+
+.part2>.about-content {
+
+    flex-direction: row-reverse;
+}
+
+.part2 .about-text {
+
+    margin-right: -10%;
+
+}
+
+.part1 .about-text {
+
+    margin-left: -10%;
+
+}
+
+
+.about-content {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.about-content>img {
+
+    width: 35rem;
+}
+
+.about-text {
+
+    width: 80vh;
+    text-align: justify;
+    text-justify: inter-word;
+
+
+}
+
+.about-text p {
+
+
+    font-family: Montserrat;
+    margin-bottom: 10%;
+    font-size: 25px;
+
+
+}
+
+.about-text h1 {
+
+
+    font-family: Montserrat;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 35px;
+    text-wrap: nowrap;
+
+}
+
+
+
+.terms {
+
+    width: 100vw;
+    padding: 15vh 0 25vh 0;
+    margin-top: -10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url("images/about/bg4.png") no-repeat;
+    background-size: cover;
+}
+
+.terms-container {
+
+    padding: 2rem 4rem 2rem 4rem;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.terms-container>h1 {
+
+    font-family: 'Monsterrat', sans-serif;
+    padding-bottom: 1rem;
+    margin-bottom: 3%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-size: 35px;
+    text-align: center;
+}
+
+.terms-container>p {
+
+    font-family: 'Monsterrat', sans-serif;
+    width: fit-content;
+    font-size: 1.2vw;
+    font-weight: lighter;
+
+
+}
+
+/* wag gagalawin  */
+
+
+.part5 {
+
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    padding: 20vh 0 25vh 0;
+    margin-top: -10%;
+    background: url("images/about/bg3.png") no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 919px;
+    justify-content: center;
+}
+
+.dropdown-label {
+    font-family: Montserrat;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    width: 950px;
+    margin-bottom: 15px;
+    background-color: #313131;
+    border-radius: 5px;
+    height: 3rem;
+}
+
+
+.dropdown-p5 {
+    background-color: white;
+    border: 1px solid black;
+    width: 950.123px;
+    height: 55px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    border: black solid 1px;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-toggle p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.dropdown-toggle img {
+    margin-left: auto;
+}
+
+.dropdown:hover .dropdown-toggle img {
+    transform: rotate(180deg);
+}
+
+.hover-up img {
+    transform: rotate(180deg);
+}
+
+.dropdown-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300.468px;
+    overflow-y: auto;
+}
+
+
+.dropdown-options li {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding: 1.2rem;
+}
+
+
+
+.dropdown-p5:hover {
+    height: auto;
+}
+
+
+
+
+
+/* footer na to */
+
+
+.top {
+
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    height: 310px;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+.Quicklinks a,
+.Help a,
+.location p,
+.Contacts a {
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.location p:hover,
+.top a:hover {
+
+    text-decoration: underline;
+
+}
+
+.Quicklinks h1,
+.Help h1 {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.Contacts {
+
+    margin-top: 120px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.line {
+
+    width: 200px;
+    background-color: white;
+    height: 1px;
+
+    margin-bottom: 30px;
+}
+
+.Contacts h1 {
+
+    color: white;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.fb {
+
+    margin-right: 18px;
+
+}
+
+.line2 {
+
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.bottom {
+
+    background-color: black;
+    padding-block: 1.5rem;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    text-wrap: nowrap;
+
+}
+
+.bottom p {
+
+    font-weight: 100;
+
+}
+
+.ARS {
+
+    margin-left: 950px;
+}
