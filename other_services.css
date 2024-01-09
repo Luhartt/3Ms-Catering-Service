@@ -330,7 +330,7 @@ form,
 
     font-size: 20px;
     font-family: 'Montserrat';
-    text-wrap: nowrap;
+    text-wrap: wrap;
 
 
 }
